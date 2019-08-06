@@ -1,0 +1,30 @@
+{
+   "name": "testDemoES6",
+   "version": "1.0.0",
+   "main": "index.js",
+   "repository": "https://github.com/stefaneidelloth/testDemoES6.git",
+   "author": "Stefan Eidelloth <matameko@posteo.de>",
+   "license": "MIT",
+   "dependencies": {
+      "inject-loader": "^4.0.1"
+   },
+   "devDependencies": {
+      "babel-core": "6.26.3",
+      "babel-loader": "8.0.6",
+      "babel-preset-env": "1.7.0",
+      "jasmine": "3.4.0",
+      "karma": "4.2.0",
+      "karma-chrome-launcher": "3.0.0",
+      "karma-cli": "2.0.0",
+      "karma-jasmine": "2.0.1",
+      "karma-jasmine-html-reporter": "1.4.2",
+      "karma-requirejs": "1.1.0",
+      "karma-webpack": "4.0.2",
+      "requirejs": "2.3.6",
+      "squirejs": "0.2.1",
+      "webpack": "4.39.1"
+   },
+   "scripts": {
+      "test": "./node_modules/karma/bin/karma start karma.conf.js"
+   }
+}

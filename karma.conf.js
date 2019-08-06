@@ -19,8 +19,9 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [			
         {pattern: 'bower_components/**/*.js', included: false},	
-		{pattern: 'node_modules/squirejs/src/Squire.js', included: false},		
-		{pattern: 'node_modules/jasmine/bin/jasmine.js', included: false},				
+		{pattern: 'node_modules/inject-loader/dist/index.js', included: false},		
+		{pattern: 'node_modules/jasmine/bin/jasmine.js', included: false},
+		{pattern: 'node_modules/amd-inject-loader/index.js', included: false},			
 		{pattern: 'src/**/*.js', included: false},	   
 		{pattern: 'test/**/*.test.js', included: false},	   
 		'test/test-main.js'

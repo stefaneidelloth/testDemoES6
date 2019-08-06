@@ -7,7 +7,8 @@ require.config({
 	paths : {
 		'squire': 'node_modules/squirejs/src/Squire',
 		'd3': 'bower_components/d3/d3.min',
-		'jquery' : 'bower_components/jquery/dist/jquery.min'		
+		'jquery' : 'bower_components/jquery/dist/jquery.min',
+		'amd-inject' : 'node_modules/amd-inject-loader/index'		
 	}
 });
 

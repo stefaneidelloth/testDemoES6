@@ -1,33 +1,27 @@
+/*
 define([
-	'squire'	
-], function (
-	Squire
-) {	
-
+	'inject!src/qux'
+], function(
+	ModuleInjector
+){*/
 	
 	describe('Qux', function(){
 		
 		var sut;		
 		
 		beforeEach(function(done){	
-
-			var injector = new Squire();			
-			injector.mock('src/baa', createBaaMock());
-					
-			injector.require([
-				'src/qux'
-			], function(
-				quxModule
-			){				
-				
-				var Qux = quxModule.default;		
-				sut = new Qux('qux');
-				
-				done();	
-			}, function(error){
-				console.log('+++++');
-				console.log(error);
+		
+		   require(['amd-inject!src/qux'],function(ModuleInjector){
+			   var quxModule = ModuleInjector({
+			  'src/baa': crateBaaMock()
 			});
+
+			var Qux = quxModule.default;		
+			sut = new Qux('qux');
+
+			done();	
+		   });
+			
 			
 						
 		});
@@ -60,4 +54,4 @@ define([
 		
 	});	
 	
-});	
+//});			
